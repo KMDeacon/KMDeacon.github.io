@@ -1,0 +1,28 @@
+document.ready(setTimer());
+var refreshIntervalId;
+
+function setTimer() {
+    var countDownDate = Date.now() + (6.5 * 60000);
+
+    // Update the count down every 1 second
+    refreshIntervalId = setInterval(function() {
+
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var minutes = Math.floor((distance % (1000* 60* 60)) / (1000* 60));
+    var seconds = Math.floor((distance % (1000* 60)) / 1000);
+
+    document.getElementById("timer").innerHTML = minutes + "m "+ seconds + "s ";
+
+    if(distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "Done";
+    }
+    }, 1000);
+}
+
+function resetTimer() {
+    clearInterval(refreshIntervalId);
+    setTimer();
+}
