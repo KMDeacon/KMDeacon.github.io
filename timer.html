@@ -1,8 +1,12 @@
 <html>
     <head>
-        <script src="timer.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
+            body {
+                color: white;
+                font-family: verdana;
+            }
+
             p {
                 text-align: center;
                 font-size: 60px;
@@ -10,14 +14,19 @@
             }
             #reset {
                 margin: 0 auto;
-                border: 1px solid black;
+                border: 1px solid white;
                 height: 50px;
-                width: 50px;
+                width: 100px;
+                border-radius: 10px;
+                text-align: center;
             }
         </style>
     </head>
     <body>
         <p id="timer"></p><br>
         <div id="reset" onclick="resetTimer()">Reset</div>
+
+
+        <script src="timer.js"></script>
     </body>
 </html>
