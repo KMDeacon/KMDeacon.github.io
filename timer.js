@@ -19,7 +19,7 @@ function setTimer() {
     if(distance < 0) {
         clearInterval(refreshIntervalId);
         document.getElementById("timer").innerHTML = "Done";
-        document.body.style.backgroundColor = "green";
+        document.body.style.backgroundColor = "limegreen";
     }
     }, 1000);
 }
