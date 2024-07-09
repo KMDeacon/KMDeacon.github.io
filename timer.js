@@ -1,4 +1,4 @@
-window.onload(setTimer());
+window.onload = setTimer;
 var refreshIntervalId;
 
 function setTimer() {
