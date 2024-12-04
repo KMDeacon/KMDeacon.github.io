@@ -2,7 +2,7 @@ window.onload = setTimer;
 var refreshIntervalId;
 
 function setTimer() {
-    var countDownDate = Date.now() + (6.17 * 60000);
+    var countDownDate = Date.now() + (3 * 60000);
     document.body.style.backgroundColor = "red";
     // Update the count down every 1 second
     refreshIntervalId = setInterval(function () {
